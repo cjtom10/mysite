@@ -1,0 +1,89 @@
+/*!
+ * Start Bootstrap - Scrolling Nav (https://startbootstrap.com/templates/scrolling-nav)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-scrolling-nav/blob/master/LICENSE)
+ */
+ #bg {
+   position: fixed;
+   top: 0;
+   bottom: 5;
+   left: 0;
+   z-index:-2;
+   y-index: +2;
+
+   /* Preserve aspet ratio */
+   min-width: 100%;
+   min-height: 100%;
+ }
+
+header {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 150px;
+  padding: 156px 0 100px;
+  background-image: <img src="C:\Users\gerbera tetra\Documents\site\scroll nav\startbootstrap-scrolling-nav-master\images\topnav background.png" alt="">;
+
+}
+
+div1 {
+  background-image: <img src="<img src="C:\Users\gerbera tetra\Documents\site\scroll nav\startbootstrap-scrolling-nav-master\images\background.png">;
+}
+
+section {
+  padding: 150px 0 100px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 150px;
+  background-color: rgba(228, 158, 0, 0.5);
+  overflow: auto;
+  overflow: hidden;
+
+}
+
+
+
+section1 {
+  padding: 150px 0 100px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 150px;
+  background-color: rgba(228, 158, 0, 0.5);
+  overflow: auto;
+
+}
+
+:root {
+  --gutter: 10px;
+}
+
+.app {
+  padding: var(--gutter) 0;
+  display: grid;
+  grid-gap: var(--gutter) 0;
+  grid-template-columns: var(--gutter) 1fr var(--gutter);
+  align-content: start;
+}
+
+.app > * {
+  grid-column: 2 / -2;
+}
+
+.app > .full {
+  grid-column: 1 / -1;
+}
+
+.hs {
+  display: grid;
+  grid-gap: calc(var(--gutter) / 2);
+  grid-template-columns: repeat(6, calc(50% - var(--gutter) * 2));
+  grid-template-rows: minmax(150px, 1fr);
+
+  overflow:scroll;
+  overflow-y:auto;
+  scroll-snap-type: x proximity;
+  padding-bottom: 0;
+  margin-bottom: -5;
+}
